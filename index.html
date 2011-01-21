@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Twitter Accounts Feed</title>
+    <meta name="description" content="Twitter Accounts Feed">
+    <meta name="author" content="Aleksandar Janković">
+
+    <!-- Loading reset stylesheet from Yahoo CDN -->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Twitter screen names</h1>
+        <form id="names-form" name="names-form" action="fetchfeeds.php" metod="GET">
+          <input id="accounts" type="text" name="accounts">
+          <input type="submit" name="submit" value="Submit">
+        </form>
+      </header>
+      <!-- This is the part where we load feeds -->
+      <div id="panels">
+        
+      </div>
+      <footer>Copyright &copy; <a href="http://ajankovic.com">Aleksandar Janković</a></footer>
+
+      <!-- Loading jquery from Google CDN -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+
+      <!-- Application files first jquery plugin, then main js file -->
+      <script src="js/sliding.panels.jquery.js"></script>
+      <script src="js/twitter-accounts-feed.jquery.js"></script>
+    </div> <!-- end of #container -->
+  </body>
+</html>

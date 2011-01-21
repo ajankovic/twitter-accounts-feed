@@ -1,0 +1,80 @@
+/*
+Author:      Aleksandar Janković, office@ajankovic.com
+Description: Stylesheed file used for Twitter accounts feed application.
+             Made for demonstration purposes only.
+*/
+
+body{
+  font-family: Tahoma, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+h1{
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+}
+footer{
+  display: block;
+  text-align: center;
+  padding: 30px 0;
+}
+#container{
+  margin: 0 auto;
+  width: 500px;
+  border: 1px solid #CCCCCC;
+  padding: 10px;
+}
+#names-form{
+  text-align: center;
+  padding-bottom: 10px;
+}
+#accounts{
+  display: block;
+  width: 400px;
+  margin: 10px auto;
+  font-size: 16px;
+}
+#panels{
+  overflow: hidden;
+}
+.panels-holder{
+  position: relative;
+  width: 9999px;
+  left: 0;
+}
+.panel{
+	float: left;
+	width: 500px;
+}
+.next-panel-button{
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1.2em;
+  text-decoration: none;
+  background: #CCCCCC;
+}
+.message{
+  margin-bottom: 10px;
+}
+
+
+/* group all clearfix declarations */
+#panels:after, .panels-holder:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	font-size: 0;
+}
+#panels, .panels-holder{
+	display: inline-block;
+}
+#panels, .panels-holder{
+	display: block;
+	_height: 1px;
+}
+/* end of clearfix */
